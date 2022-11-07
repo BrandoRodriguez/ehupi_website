@@ -1,0 +1,42 @@
+.services {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.service_item {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: grid;
+  gap: 15px;
+  padding-top: 4rem;
+}
+
+.service_item h2 {
+  color: var(--white);
+  font-size: var(--sm);
+  font-weight: 500;
+}
+
+.service_item span {
+  background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+  border-radius: 7px;
+  padding: 15px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+@media (max-width: 900px) {
+  .service_item {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  /* 
+  .card {
+    display: block;
+    align-items: center;
+    gap: 25px;
+  } */
+}

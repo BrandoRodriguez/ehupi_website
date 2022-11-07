@@ -1,0 +1,138 @@
+.business {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.content {
+  width: 50%;
+}
+
+.image {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: var(--lg);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.description {
+  font-size: var(--md);
+  line-height: 30.8px;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  color: var(--description-color);
+  padding-right: 20%;
+}
+
+.container_business div:nth-child(even) {
+  flex-flow: row-reverse;
+}
+
+.container_business div:nth-child(even) .image {
+  justify-content: start;
+}
+
+.container_business div:nth-child(even) .description {
+  padding-left: 25%;
+  padding-right: 0;
+}
+
+.number::before {
+  content: "";
+  height: 100px;
+  --start-color: #000;
+  --end-color: #FF0080;
+  background: linear-gradient(var(--start-color), var(--end-color));
+  width: 1px;
+  align-self: center;
+  position: absolute;
+  bottom: 5px;
+  z-index: -1;
+}
+
+.number {
+  display: inline-flex;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  --start-color: #7928CA;
+  --end-color: #FF0080;
+  background: linear-gradient(90deg, var(--start-color), var(--end-color));
+}
+
+.title_services {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.color {
+  --start-color: #7928CA;
+  --end-color: #FF0080;
+  background: linear-gradient(90deg, var(--start-color), var(--end-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle_services {
+  font-size: var(--lg);
+  color: var(--white);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.businessitem {
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 900px) {
+  .businessitem {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .description {
+    font-size: var(--sm);
+    margin-bottom: 3rem;
+    padding-right: 0;
+  }
+
+  .subtitle_services {
+    font-size: 25px;
+  }
+
+  .color {
+    font-size: var(--md);
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container_business div:nth-child(even) .description {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

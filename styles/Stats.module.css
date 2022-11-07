@@ -1,0 +1,46 @@
+.value {
+  font-size: 40.89px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.title {
+  background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20.45px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.stats {
+  display: flex;
+  padding-top: 3rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+@media (max-width: 900px) {
+  .stats {
+    display: block;
+    padding-top: 0rem;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .value {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: var(--sm);
+    text-align: center;
+  }
+}

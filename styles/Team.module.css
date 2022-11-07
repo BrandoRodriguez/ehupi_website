@@ -1,0 +1,72 @@
+.container_team {
+  padding-top: 4rem;
+}
+
+.team {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: grid;
+  gap: 15px;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.teamitem {
+  background: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.description {
+  color: var(--white);
+  font-size: var(--sm);
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
+.name {
+  color: var(--white);
+  font-size: var(--md);
+  font-weight: 500;
+  text-align: center;
+}
+
+.skill {
+  color: var(--description-color);
+  font-size: var(--sm);
+  text-align: center;
+  font-weight: 500;
+}
+
+
+.image {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.image span {
+  border-radius: 100%;
+
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+
+/* 
+.content {
+  display: flex;
+  align-items: center;
+} */
+
+
+@media (max-width: 900px) {
+  .team {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

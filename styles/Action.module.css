@@ -1,0 +1,37 @@
+.action {
+  background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+  border-radius: 20px;
+  padding: 50px 70px;
+  margin-bottom: 4rem;
+  display: flex;
+}
+
+.title {
+  font-size: var(--lg);
+  color: var(--white);
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.description {
+  font-size: var(--md);
+  color: var(--description-color);
+  width: 500px;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: var(--md);
+  }
+
+  .description {
+    font-size: var(--sm);
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+
+  .action {
+    display: block;
+    padding: 40px;
+  }
+}

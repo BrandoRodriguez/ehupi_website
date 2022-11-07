@@ -1,0 +1,136 @@
+* {
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #00F6FF;
+  --background-color: #00040F;
+  --description-color: rgba(255, 255, 255, .7);
+  --white: rgb(255, 255, 255, .9);
+  --black: #000;
+  --xl: 72px;
+  --lg: 48px;
+  --md: 18px;
+  --sm: 15px;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "poppins";
+}
+
+.background-noise {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.background-noise {
+  background: url(../assets/noise.png);
+  content: "";
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  position: fixed;
+  z-index: 1;
+  opacity: .5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap {
+  gap: 25px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.top {
+  margin-top: 5px;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.padding {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.visible {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .visible {
+    display: none;
+  }
+}
+
+.hero {
+  background:
+    radial-gradient(farthest-side at top right, rgb(252, 103, 250, .1), transparent 70%),
+    radial-gradient(farthest-side at top right, rgb(38, 208, 206, .1), transparent 70%),
+    radial-gradient(farthest-side at top right, rgb(255, 255, 255, .100), transparent 50%);
+}
+
+.business {
+  background:
+    radial-gradient(farthest-side at center left, rgb(252, 103, 250, .1), transparent 70%),
+    radial-gradient(farthest-side at center left, rgb(38, 208, 206, .1), transparent 70%),
+    radial-gradient(farthest-side at center left, rgb(255, 255, 255, .05), transparent 50%);
+}
+
+@media (max-width: 900px) {
+  .background-services {
+    background:
+      none
+  }
+}
